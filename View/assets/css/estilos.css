@@ -1,0 +1,387 @@
+/* INDEX */
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 270px;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+
+
+.nav-link.active,
+.nav-link:focus {
+    color: #fff;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#section {
+    background-image: url('../images/fondo-dashboard.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 89vh;
+}
+
+/* BREADCRUMB */
+ol#breadcrumb {
+    text-decoration: none;
+}
+
+li.breadcrumb-item {
+    padding-top: 7px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+li.breadcrumb-item a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CLIENTES */
+.difuminado {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+
+.modal-header {
+    background-color: rgba(0, 0, 255, 1);
+}
+
+.modal-body {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.modal-footer {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#btn-agregar-empleado,
+#btn-editar-empleado,
+#btn-borrar-empleado {
+    transition: .3s ease all;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#btn-agregar-empleado:hover,
+#btn-editar-empleado:hover,
+#btn-borrar-empleado:hover {
+    transition: .1s ease all;
+    transform: scale(1.07);
+}
+
+#card-funciones {
+    transition: .3 ease all;
+}
+
+#icono {
+    font-size: 30px;
+}
+
+
+/* SIDEBAR*/
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 38vh;
+    background: #F3F3F3;
+    z-index: 100;
+    border-right: 5px solid #Babcbd;
+    transition: all 0.5s ease;
+}
+
+#sidebar.close {
+    width: 13vh;
+}
+
+#sidebar .logo-details {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar .logo-details i {
+    font-size: 30px;
+    color: #000;
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#sidebar .logo-details .logo_name {
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    transition: 0.3s ease;
+    transition-delay: 0.1s;
+}
+
+#sidebar.close .logo-details .logo_name {
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sidebar .nav-links {
+    height: 100%;
+    padding: 30px 0 150px 0;
+    overflow: auto;
+}
+
+#sidebar.close .nav-links {
+    overflow: visible;
+}
+
+#sidebar .nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar .nav-links li {
+    position: relative;
+    list-style: none;
+    transition: all 0.4s ease;
+}
+
+#sidebar .nav-links li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#sidebar .nav-links li .iocn-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sidebar.close .nav-links li .iocn-link {
+    display: block;
+}
+
+#sidebar .nav-links li i {
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color: #000;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#sidebar .nav-links li ul li {
+    font-size: 22px;
+    display: flex;
+    color: #000;
+}
+
+#sidebar .nav-links li ul li i {
+    font-size: 20px;
+}
+
+#sidebar .nav-links li.showMenu i.arrow {
+    transform: rotate(-180deg);
+}
+
+#sidebar.close .nav-links i.arrow {
+    display: none;
+}
+
+#sidebar .nav-links li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#sidebar .nav-links li a .link_name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+#sidebar.close .nav-links li a .link_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sidebar .nav-links li .sub-menu {
+    background: #Babcbd;
+    display: none;
+}
+
+ul.sub-menu {
+    padding-left: 0rem;
+}
+
+#sidebar .nav-links li.showMenu .sub-menu {
+    display: block;
+}
+
+#sidebar .nav-links li .sub-menu a {
+    color: #000;
+    font-size: 15px;
+    padding: 5px 0;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+#sidebar .nav-links li .sub-menu a:hover {
+    opacity: 1;
+}
+
+#sidebar.close .nav-links li .sub-menu {
+
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    margin-top: 0;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+    transition: 0s;
+}
+
+#sidebar.close .nav-links li:hover .sub-menu {
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+#sidebar .nav-links li .sub-menu .link_name {
+    display: none;
+
+}
+
+#sidebar.close .nav-links li .sub-menu .link_name {
+    font-size: 20px;
+    opacity: 1;
+    display: block;
+}
+
+#sidebar .nav-links li .sub-menu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sidebar .nav-links li:hover .sub-menu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#main {
+    position: relative;
+    height: 100vh;
+    left: 38vh;
+    width: calc(100% - 38vh);
+    transition: all 0.5s ease;
+}
+
+#sidebar.close~#main {
+    left: 13vh;
+    width: calc(100% - 13vh);
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.card-img-top:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
